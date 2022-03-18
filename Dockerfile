@@ -29,9 +29,12 @@ RUN pip install pandas-datareader && \
     pip install shap && \
     pip install joblib==1.1.0 && \
     pip install matplotlib==3.2.2 && \
-    pip install xgboost==0.90
+    pip install xgboost==0.90 && \
+    pip install imblearn==0.8.1
 
-USER $NB_UID
+USER $NB_UID 
+
+WORKDIR /work
 
 ENV JUPYTER_ENABLE_LAB=yes
 
