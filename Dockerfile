@@ -30,11 +30,13 @@ RUN pip install pandas-datareader && \
     pip install joblib==1.1.0 && \
     pip install matplotlib==3.2.2 && \
     pip install xgboost==0.90 && \
-    pip install imblearn==0.8.1
+    pip install imblearn
 
 USER $NB_UID 
 
-WORKDIR /work
+VOLUME ["/works"]
+
+WORKDIR /works
 
 ENV JUPYTER_ENABLE_LAB=yes
 
