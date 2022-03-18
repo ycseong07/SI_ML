@@ -1,3 +1,6 @@
 *.txt
 data/
 model/
+.ipynb_checkpoints/
+.DS_Store/
+
